@@ -38,8 +38,10 @@ h1{
   padding-right: 30px;
 }
 .btn-primary{
+  font-size: 20px;
   background: linear-gradient(to left, #39B5E0 0%, #2146C7 90%);
   border-width: 0;
+  padding: 10px 30px;
 	/* -webkit-background-clip: text;
 	-webkit-text-fill-color: transparent; */
 }
@@ -134,7 +136,7 @@ h1{
   padding-top: 0;
 }
 
-#impact h5, #offerings h5, #success h5, #success-carousel h5, .section-header h5{
+#impact h5, #offerings h5, #success h5, #success-carousel h5, .section-header h5, #mentoring h5{
   font-weight: bolder;
   color: #2146C7;
 }
@@ -149,6 +151,10 @@ h1{
 	-webkit-text-fill-color: transparent;
 }
 
+
+.sd{
+  display: none;
+}
 #offerings{
   text-align: center;
   padding-top: 30px;
@@ -166,9 +172,9 @@ h1{
   border-radius: 10px;
   width: 80%;
 }
-#offerings .btn, #success-carousel .btn{
+#offerings .btn, #success-carousel .btn, #blogs .btn{
   /* border-width: medium; */
-  max-width: 10rem;
+  /* max-width: 12rem; */
   font-size: 16px;
   /* font-weight: bolder; */
   border-width: 2px;
@@ -192,7 +198,7 @@ h1{
 
 
 #team{
-  padding: 100px 0;
+  padding: 100px 0 0;
 }
 #team .section-header{
   padding-bottom: 50px;
@@ -200,7 +206,7 @@ h1{
 .members{
   background: linear-gradient(96.55deg,rgba(62,142,188,.62),rgba(63,126,184,.536) 30.88%,rgba(65,106,179,.43) 84.64%,rgba(67,81,173,.302) 99.02%,rgba(68,75,171,.67) 102.21%);
   text-align: center;
-  padding: 100px 100px;
+  /* padding: 100px 100px; */
   padding: 7%;
 }
 .members .col-lg-4{
@@ -237,9 +243,59 @@ h1{
   width: 100%;
 }
 
-.sd{
-  display: none;
+
+
+.mentor-card{
+  margin: 30px;
+
+  background: #ffffff;
+  box-shadow: 0px 2px 10px 5px #e6e6ea;
+  border-radius: 6px;
+  position: relative;
 }
+.mentor-img{
+  position: absolute;
+  top: 10%;
+  left: -10%;
+}
+.mentor-info{
+  padding: 20px 20px 10px 120px;
+}
+.mentor-info .text{
+  font-size: 14px;
+  margin-left: 30px;
+}
+
+#blogs .card{
+  border-radius: 0;
+  height: 85%;
+}
+
+#blogs .card:hover{
+  transition: all .3s ease-in-out;
+  transform: scale(1.1);
+}
+
+
+#blogs .card-img-container{
+  height: 233px;
+
+}
+#blogs .card img{
+  height: 100%;
+  object-fit: cover;
+}
+#blogs .card-body{
+  padding: 0;
+}
+#blogs .card-content{
+  padding: 1rem;
+}
+
+
+
+
+
 @media only screen and (max-width: 600px) {
   #home .col-lg-7{
     text-align: center;
