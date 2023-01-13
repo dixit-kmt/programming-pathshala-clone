@@ -9,6 +9,9 @@ section{
 h1{
   font-weight: 600;
 }
+.col-lg-6{
+  margin: auto;
+}
 
 .navbar{
   box-shadow: 2px 2px 8px 1px #F7F7F7;
@@ -20,6 +23,10 @@ h1{
 
 .collapse{
   justify-content: center;
+}
+
+.header-logo{
+  width: 250px;
 }
 .nav-link{
   font-size: 14px;
@@ -105,7 +112,6 @@ h1{
   padding: 5px 0;
 }
 .new-course h6{
-  font-size: 18px;
   padding-top: 22px;
 }
 
@@ -259,7 +265,7 @@ h1{
   left: -10%;
 }
 .mentor-info{
-  padding: 20px 20px 10px 120px;
+  padding: 20px 20px 10px 20%;
 }
 .mentor-info .text{
   font-size: 14px;
@@ -293,10 +299,99 @@ h1{
 }
 
 
+#contact{
+  background-color: #f3f4ff;
+}
+
+
+.form2 label{
+  font-weight: 400;
+  color: #000;
+}
+
+.form2 .form-control{
+  border-width: .5px;
+  line-height: 2.5;
+}
+
+.form1 .btn, .form2 .btn{
+  color: #fff;
+  font-weight: 600;
+  padding: 10px 20px;
+  max-width: 220px;
+}
+.form2 .btn{
+  max-width: 180px;
+}
+
+#trial{
+  box-shadow: 0 10px 20px -10px #e6e6ea;
+}
+
+
+
+footer{
+  padding: 3% 7% 0;
+}
+
+footer h5{
+  font-weight: normal;
+}
+footer a{
+  color: #4f516b;
+  font-weight: 500;
+}
+footer .col-md-4{
+  margin-bottom: 10px;
+}
+footer .col-md-4 a{
+  text-decoration: none;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+footer .col-lg-5{
+  padding: 20px;
+}
+footer .col-lg-5 p{
+  font-weight: 300;
+}
+footer .social-icons-container{
+  display: flex;
+  margin-top: 30px;
+}
+footer .social-icon{
+  margin: 0 15px 0 0;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #F9F9F9;
+
+}
+footer .social-icon i{
+  color: #73777B;
+  font-size: 30px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.rights{
+  font-size: 12px;
+  margin: 0;
+  text-align: center;
+}
 
 
 
 @media only screen and (max-width: 600px) {
+  .navbar-toggler{
+    margin: 0 20px 0 10px;
+  }
+  .header-logo{
+    width: 200px;
+  }
   #home .col-lg-7{
     text-align: center;
   }
@@ -306,7 +401,7 @@ h1{
   .sd{
     display: block;
   }
-  .lg{
+  .free-trial-button, .lg{
     display: none;
   }
   #offerings img {
@@ -314,6 +409,10 @@ h1{
   }
   .members .col-lg-4{
     margin: 50px auto;
+  }
+  .mentor-info .text {
+    font-size: 12px;
+    margin-left: 30px;
   }
 
 }
