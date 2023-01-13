@@ -3,12 +3,11 @@ body{
   font-family: 'Poppins', sans-serif;
 }
 section{
-  padding: 100px 100px;
+  /* padding: 100px 100px; */
+  padding: 7%;
 }
 h1{
   font-weight: 600;
-  font-size: 2.5vw;
-
 }
 
 .navbar{
@@ -59,6 +58,12 @@ h1{
 .home .col-lg-6{
   margin: auto;
 }
+
+#home .row{
+  margin: 0;
+    padding: 0;
+}
+
 #home h1{
   font-size: 3.8rem;
   font-weight: 600;
@@ -153,13 +158,13 @@ h1{
   margin-top: 10%;
   text-align: left;
 }
-#offerings .col-lg-6{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+#offerings .text{
+  padding-top: 7%;
+  padding-bottom: 3%;
 }
 #offerings img {
-  border-radius: 20px;
+  border-radius: 10px;
+  width: 80%;
 }
 #offerings .btn, #success-carousel .btn{
   /* border-width: medium; */
@@ -195,7 +200,8 @@ h1{
 .members{
   background: linear-gradient(96.55deg,rgba(62,142,188,.62),rgba(63,126,184,.536) 30.88%,rgba(65,106,179,.43) 84.64%,rgba(67,81,173,.302) 99.02%,rgba(68,75,171,.67) 102.21%);
   text-align: center;
-  padding: 100px 100px;;
+  padding: 100px 100px;
+  padding: 7%;
 }
 .members .col-lg-4{
   padding: 30px;
@@ -229,4 +235,29 @@ h1{
   position: absolute;
   bottom: 10px;
   width: 100%;
+}
+
+.sd{
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  #home .col-lg-7{
+    text-align: center;
+  }
+  #impact .row h1{
+    margin-top: 10px;
+  }
+  .sd{
+    display: block;
+  }
+  .lg{
+    display: none;
+  }
+  #offerings img {
+    width: 100%;
+  }
+  .members .col-lg-4{
+    margin: 50px auto;
+  }
+
 }
